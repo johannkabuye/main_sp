@@ -1,0 +1,25 @@
+Am Ende der Datei einfügen. Dafür in den Terminal tippen: 
+
+sudo nano /etc/profile
+
+Für raspbian
+
+pd -alsamidi -midiindev 1 -midioutdev 1 /media/patch/INTENSO/organelle-project/STEPMOTHER/step-mother.pd & sleep 5
+aconnect 'nanoKONTROL:0' 'Pure Data:0'sleep 5
+aconnect 'nanoKEY:0' 'Pure Data:0'sleep 5
+aconnect 'Pure Data:1' 'nanoKONTROL:0' &
+
+Für patchbox os: 
+
+pd /media/patch/INTENSO/organelle-project/STEPMOTHER/step-mother.pd & 
+
+
+
+Für Elementary OS (sudo must be set before... no idea why)
+
+sudo pd -alsamidi -midiindev 1 -midioutdev 1 /home/johann/Documents/Pure_Data/Main-Sp & sleep 5
+aconnect 'nanoKONTROL2:0' 'Pure Data:0'sleep 5
+aconnect 'nanoKEY2:0' 'Pure Data:0'sleep 5
+aconnect 'Pure Data:1' 'nanoKONTROL2:0'sleep 5 &
+
+(afterwards enter has to pressed to activate the midi-output - no idea why...)

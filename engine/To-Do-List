@@ -1,0 +1,45 @@
+
+To-Do: 
+
+Tasks: 
+
+
+Projects: 
+-Editor patch (offline) (where samples can be loaded -through the browser- edited and sliced. 
+-Editor patch - online - in the hardware integrated. 
+-Redesign folder structure. Simple is better. 
+-Design display patch. 
+-Should I integrate a recorder?
+-Remove compressor - creates incompatibility with different computer systems. 
+--> in the end there will be a desktop and a RPI-Version (the RPI-Version will have special tools - compressor - synth - ect...)
+
+
+
+
+Ideas: 
+-Total rebuild - the instruments is for more modulised. Also, taking the idea from the octatrack, the sampler is now an 8 voice sampler where each voice gets controlled individualy. 
+
+-Divide SP into: Livemode / Production mode. In Production mode heavy effects, poly synth can be loaded. In live mode: Sampler, monosynth + fixed FX.
+- Different method to play 
+
+Done: 
+-Buscompressor/Limiter on Master-Out (01.09.2019)
+-needs clipping protection for recording organelle into sampler (27.05.19)
+-FX works for ein sample at a time. So far three fxs: filter, delay, pitch-shifter (26.05.19)
+-make the project playable from the interface again. 
+    -software keys should work.(26.05.19)
+-load synth-patches from keys. (22.05.19)
+-Nanokeys now plays the samples. Better feeling for playing - more buttons. But: now light indicated which pad is playing. (20.05.19)
+-8-voice-polyphonie of 32 samples (15-19.05.19)
+-Trigger-no loop mode needs a retrigger when hitting the sample-pad again. needs fix. (15.05.19)
+-Marker2 shouldnt go beyong begining or end of sample. needs fix. (15.05.19)
+-Current pad led is on. (14.05.19)
+-Clicking at the end of the sample. Needs fix. (13.05.19)
+  - Fade out at the end of recording. 
+  - extra counter that fades the sample before it ends.
+-remove that even note-off triggers current pattern status.(12.05.19)
+-Fix Recording for Gate+Loop, Trigger+noloop, Trigger+loop.(12.05.19)
+-Redesigning the input of the sampler-edit-voice(12.05.19)
+-Debugging Marker-Button (it freezes...) (11.05.19)
+-Gate, Loop, Marker: working. 
+
